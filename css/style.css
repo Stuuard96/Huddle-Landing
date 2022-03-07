@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
 
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root{
     --poppins: 'Poppins', sans-serif;
     --open-sans: 'Open Sans', sans-serif;
@@ -16,3 +21,44 @@
 body{
     font-family: var(--open-sans);
 }
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    min-height: 100vh;
+    position: relative;
+}
+
+.hero__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    --padding-container: 60px 0 45px;
+}
+
+.hero__logo{
+    width: 45%;
+    max-width: 160px;
+} 
+
+.hero__huddle{
+    width: 100%;
+    display: block;   
+}
+
+.hero__cta{
+    color: var(--light-pink);
+    text-decoration: none;
+    border: 2px solid;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 0 1px;
+}
+
