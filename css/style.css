@@ -13,7 +13,6 @@
     --light-red: hsl(0, 100%, 63%);
     --very-dark-cyan: hsl(192, 100%, 9%);
     --very-pale-blue: hsl(207, 100%, 98%);
-
     --padding-container: 80px 0;
 }
 
@@ -85,6 +84,7 @@ body{
     margin-top: 16px;
     padding: 16px 30px;
     border-radius: 30px;
+    font-weight: 600;
 }
 
 .hero__picture{
@@ -121,7 +121,6 @@ body{
     position: absolute;
     width: 100%;
     height: 100px;
-    background-color: #000;
     background-repeat: no-repeat;
     background-size: 100% 100px;
 }
@@ -136,4 +135,55 @@ body{
     left: 0;
     top: 0;
     background-image: var(--wave-top);
+}
+
+.section{
+    background-color: var(--very-pale-blue);
+    --padding-container: 110px 0;
+}
+
+.section--white{
+    background-color: #fff;
+    position: relative;
+    --padding-container: 210px 0;
+    --wave-top: url('../images/bg-section-bottom-mobile-1.svg');
+    --wave-bottom: url('../images/bg-section-top-mobile-2.svg');
+    
+}
+
+.section__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.section__picture{
+    max-width: 350px;
+    margin: 0 auto 50px auto;
+}
+
+.section__img{
+    display: block;
+    width: 100%;
+}
+
+.section__texts{
+    text-align: center;
+}
+
+.subtitle{
+    margin-bottom: 16px;
+    font-family: var(--poppins);   
+}
+
+.section__paragraph{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.question{
+    position: relative;
+    --wave-top: url('../images/bg-section-bottom-mobile-2.svg');
+    --wave-bottom: url('../images/bg-footer-top-mobile.svg');
+    text-align: center;
+    --padding-container: 190px 0 210px;
 }
